@@ -1,0 +1,33 @@
+-- TABLE CUSTOMER
+CREATE TABLE Customer (
+    CustID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    RetailerID INT
+);
+
+-- TABLE RETAILER
+CREATE TABLE Retailer (
+    RetailerID INT PRIMARY KEY,
+    RetailerName VARCHAR(50)
+);
+
+-- INSERTING DATA INTO TABLE CUSTOMER
+INSERT INTO Customer (CustID, Name, RetailerID) VALUES
+(1, 'Aarav', 301),
+(2, 'Vivaan', 302),
+(3, 'Diya', 303),
+(4, 'Anaya', NULL),
+(5, 'Kabir', 304),
+(6, 'Ishaan', 302),
+(7, 'Meera', NULL),
+(8, 'Reyansh', 301),
+(9, 'Saanvi', 305),
+(10, 'Krishna', 306);
+
+-- INSERTING DATA INTO TABLE RETAILER
+INSERT INTO Retailer (RetailerID, RetailerName) VALUES
+(301, 'Big Bazaar'),
+(302, 'D Mart'),
+(303, 'Reliance Fresh'),
+(304, 'More Store'),
+(307, 'Vishal Mega Mart');
